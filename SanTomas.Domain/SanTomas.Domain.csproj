@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Categories\Repositories\" />
+      <Folder Include="Categories\Services\" />
+      <Folder Include="Certificates\Repositories\" />
+      <Folder Include="Certificates\Services\" />
+      <Folder Include="Courses\Repositories\" />
+      <Folder Include="Courses\Services\" />
+      <Folder Include="MainCategories\Repositories\" />
+      <Folder Include="MainCategories\Services\" />
+      <Folder Include="Platforms\Repositories\" />
+      <Folder Include="Platforms\Services\" />
+      <Folder Include="Users\Repositories\" />
+      <Folder Include="Users\Services\" />
+      <Folder Include="Utils\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="8.0.2" />
+    </ItemGroup>
+
+</Project>
