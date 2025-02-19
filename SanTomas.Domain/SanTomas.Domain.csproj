@@ -19,7 +19,6 @@
       <Folder Include="Platforms\Services\" />
       <Folder Include="Users\Repositories\" />
       <Folder Include="Users\Services\" />
-      <Folder Include="Utils\" />
     </ItemGroup>
 
     <ItemGroup>
