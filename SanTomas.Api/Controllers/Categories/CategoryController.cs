@@ -7,8 +7,5 @@ namespace SanTomas_Api.Controllers.Categories;
 public class CategoryController : ControllerBase
 {
     [HttpGet("{id}")]
-    public ActionResult<string> Recuperar(int id)
-    {
-        return Ok(id % 2 == 0 ? "Par" : "Ímpar");
-    }
+    public ActionResult<string> Recuperar(int id) => Ok(id % 2 == 0 ? "Par" : "Ímpar");
 }
