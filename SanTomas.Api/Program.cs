@@ -1,5 +1,9 @@
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using SanTomas.Application.MainCategories.Services;
+using SanTomas.Application.MainCategories.Services.Interfaces;
 using SanTomas.Infra.Contexts;
+using SanTomas.Ioc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +11,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddServices();
+builder.Services.AddScoped(IMainCategoriesApplication, MainCategoriesApplication);
+
+builder.Services.AddAutoMapper(typeof(Profile));
 
 var mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
 

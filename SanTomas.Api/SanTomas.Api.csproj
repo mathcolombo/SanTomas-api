@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="14.0.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.1">
           <PrivateAssets>all</PrivateAssets>
@@ -21,13 +22,14 @@
       <Folder Include="Controllers\Certificates\" />
       <Folder Include="Controllers\Courses\" />
       <Folder Include="Controllers\CourseUsers\" />
-      <Folder Include="Controllers\MainCategories\" />
       <Folder Include="Controllers\Platforms\" />
       <Folder Include="Controllers\Users\" />
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\SanTomas.Application\SanTomas.Application.csproj" />
       <ProjectReference Include="..\SanTomas.Infra\SanTomas.Infra.csproj" />
+      <ProjectReference Include="..\SanTomas.Ioc\SanTomas.Ioc.csproj" />
     </ItemGroup>
 
 </Project>
