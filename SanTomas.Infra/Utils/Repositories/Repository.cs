@@ -1,14 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SanTomas.Domain.Utils.Repositories.Interfaces;
+using SanTomas.Infra.Contexts;
 
 namespace SanTomas.Infra.Utils.Repositories;
 
 public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
 {
-    private readonly DbContext _context;
+    private readonly SanTomasDbContext _context;
     private readonly DbSet<TEntity> _dbSet;
 
-    public Repository(DbContext context)
+    public Repository(SanTomasDbContext context)
     {
         _context = context;
         _dbSet = context.Set<TEntity>();

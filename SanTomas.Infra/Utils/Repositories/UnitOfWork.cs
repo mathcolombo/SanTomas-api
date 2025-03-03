@@ -1,22 +1,30 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
+using SanTomas.Domain.Utils.Repositories.Interfaces;
+using SanTomas.Infra.Contexts;
 
 namespace SanTomas.Infra.Utils.Repositories;
 
-public class UnitOfWork(DbContext context)
+public class UnitOfWork : IUnitOfWork
 {
+    private readonly SanTomasDbContext _context;
     private IDbContextTransaction? _transaction;
 
+    public UnitOfWork(SanTomasDbContext context)
+    {
+        _context = context;
+    }
+    
     public void BeginTransaction()
     {
-        _transaction = context.Database.BeginTransaction();
+        _transaction = _context.Database.BeginTransaction();
     }
 
     public void Commit()
     {
         try
         {
-            context.SaveChanges();
+            _context.SaveChanges();
             _transaction?.Commit();
         }
         catch (Exception e)
@@ -38,6 +46,6 @@ public class UnitOfWork(DbContext context)
 
     public void SaveChanges()
     {
-        context.SaveChanges();
+        _context.SaveChanges();
     }
 }

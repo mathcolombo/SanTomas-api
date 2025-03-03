@@ -30,11 +30,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="AutoMapper" Version="14.0.0" />
+      <ProjectReference Include="..\SanTomas.Domain\SanTomas.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SanTomas.Domain\SanTomas.Domain.csproj" />
+      <PackageReference Include="AutoMapper" Version="12.0.1" />
     </ItemGroup>
 
 </Project>
