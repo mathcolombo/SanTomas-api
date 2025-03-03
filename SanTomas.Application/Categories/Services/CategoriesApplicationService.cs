@@ -47,6 +47,7 @@ public class CategoriesApplicationService : ICategoriesApplicationService
     public CategoryResponse GetById(int id)
     {
         var category = _categoriesService.GetById(id);
+        Console.WriteLine($">>>>>>>>> {category.MainCategory} > {category.MainCategoryId}");
         return _mapper.Map<CategoryResponse>(category);
     }
 

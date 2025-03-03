@@ -17,14 +17,11 @@ public class MainCategoriesService : IMainCategoriesService
 
     public MainCategory Insert(string mainCategoryName)
     {
-        MainCategory mainCategory = Instantiate(mainCategoryName);
+        var mainCategory = Instantiate(mainCategoryName);
         return _mainCategoriesRepository.Insert(mainCategory);
     }
 
-    public MainCategory GetById(int id)
-    {
-        throw new NotImplementedException();
-    }
+    public MainCategory GetById(int id) => _mainCategoriesRepository.GetById(id) ?? throw new NullReferenceException("Categoria principal não foi encontrada!");
 
     public MainCategory Update()
     {

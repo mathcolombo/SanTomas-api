@@ -21,7 +21,7 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
         return entity;
     }
 
-    public TEntity? GetById(int id) => _dbSet.Find(id);
+    public virtual TEntity? GetById(int id) => _dbSet.Find(id);
 
     public TEntity Update(TEntity entity)
     {

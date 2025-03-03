@@ -9,5 +9,13 @@ namespace SanTomas.Infra.Categories.Repositories;
 
 public class CategoriesRepository : Repository<Category>, ICategoriesRepository
 {
-    public CategoriesRepository(SanTomasDbContext context) : base(context) {}
+    private readonly SanTomasDbContext _context;
+    public CategoriesRepository(SanTomasDbContext context) : base(context)
+    {
+        _context = context;
+    }
+
+    public override Category? GetById(int id) => _context.Categories
+        .Include(c => c.MainCategory)
+        .FirstOrDefault(c => c.Id == id);
 }

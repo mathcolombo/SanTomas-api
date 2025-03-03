@@ -5,5 +5,5 @@ namespace SanTomas.Domain.Categories.Repositories.Interfaces;
 
 public interface ICategoriesRepository : IRepository<Category>
 {
-    
+    Category? GetById(int id);
 }
