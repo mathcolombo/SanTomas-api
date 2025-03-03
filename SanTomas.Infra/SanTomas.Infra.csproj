@@ -7,10 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Categories\Repositories\" />
       <Folder Include="Certificates\Repositories\" />
       <Folder Include="Courses\Repositories\" />
-      <Folder Include="MainCategories\Repositories\" />
       <Folder Include="Platforms\Repositories\" />
       <Folder Include="Users\Repositories\" />
     </ItemGroup>

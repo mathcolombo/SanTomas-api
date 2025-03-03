@@ -7,13 +7,34 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Categories\" />
-      <Folder Include="Certificates\" />
-      <Folder Include="Courses\" />
-      <Folder Include="CourseUsers\" />
-      <Folder Include="MainCategories\" />
-      <Folder Include="Platforms\" />
-      <Folder Include="Users\" />
+      <Folder Include="Certificates\Dtos\Requests\" />
+      <Folder Include="Certificates\Dtos\Responses\" />
+      <Folder Include="Certificates\Profiles\" />
+      <Folder Include="Certificates\Services\Interfaces\" />
+      <Folder Include="Courses\Dtos\Requests\" />
+      <Folder Include="Courses\Dtos\Responses\" />
+      <Folder Include="Courses\Profiles\" />
+      <Folder Include="Courses\Services\Interfaces\" />
+      <Folder Include="CourseUsers\Dtos\Requests\" />
+      <Folder Include="CourseUsers\Dtos\Responses\" />
+      <Folder Include="CourseUsers\Profiles\" />
+      <Folder Include="CourseUsers\Services\Interfaces\" />
+      <Folder Include="Platforms\Dtos\Requests\" />
+      <Folder Include="Platforms\Dtos\Responses\" />
+      <Folder Include="Platforms\Profiles\" />
+      <Folder Include="Platforms\Services\Interfaces\" />
+      <Folder Include="Users\Dtos\Requests\" />
+      <Folder Include="Users\Dtos\Responses\" />
+      <Folder Include="Users\Profiles\" />
+      <Folder Include="Users\Services\Interfaces\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="14.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SanTomas.Domain\SanTomas.Domain.csproj" />
     </ItemGroup>
 
 </Project>

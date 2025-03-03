@@ -14,16 +14,18 @@ public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
         _dbSet = context.Set<TEntity>();
     }
     
-    public void Create(TEntity entity)
+    public TEntity Insert(TEntity entity)
     {
         _dbSet.Add(entity);
+        return entity;
     }
 
-    public TEntity? Read(int id) => _dbSet.Find(id);
+    public TEntity? GetById(int id) => _dbSet.Find(id);
 
-    public void Update(TEntity entity)
+    public TEntity Update(TEntity entity)
     {
         _dbSet.Update(entity);
+        return entity;
     }
     
     public void Delete(TEntity entity)

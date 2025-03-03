@@ -7,14 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Categories\Repositories\" />
-      <Folder Include="Categories\Services\" />
       <Folder Include="Certificates\Repositories\" />
       <Folder Include="Certificates\Services\" />
       <Folder Include="Courses\Repositories\" />
       <Folder Include="Courses\Services\" />
-      <Folder Include="MainCategories\Repositories\" />
-      <Folder Include="MainCategories\Services\" />
       <Folder Include="Platforms\Repositories\" />
       <Folder Include="Platforms\Services\" />
       <Folder Include="Users\Repositories\" />
@@ -22,6 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="8.0.2" />
     </ItemGroup>
 

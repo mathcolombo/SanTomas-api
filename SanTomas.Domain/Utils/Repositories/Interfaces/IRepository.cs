@@ -1,10 +1,12 @@
-﻿namespace SanTomas.Domain.Utils.Repositories.Interfaces;
+﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
+
+namespace SanTomas.Domain.Utils.Repositories.Interfaces;
 
 public interface IRepository<TEntity> where TEntity : class
 {
-    void Create(TEntity entity);
-    TEntity? Read(int id);
-    void Update(TEntity entity);
+    TEntity Insert(TEntity entity);
+    TEntity? GetById(int id);
+    TEntity Update(TEntity entity);
     void Delete(TEntity entity);
     IQueryable<TEntity> Query();
 }

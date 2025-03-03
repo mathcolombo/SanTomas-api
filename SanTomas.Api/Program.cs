@@ -13,7 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddServices();
-builder.Services.AddScoped(IMainCategoriesApplication, MainCategoriesApplication);
+//builder.Services.AddScoped(IMainCategoriesApplication, MainCategoriesApplication);
 
 builder.Services.AddAutoMapper(typeof(Profile));
 

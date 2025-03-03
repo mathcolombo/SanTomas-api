@@ -5,7 +5,7 @@ namespace SanTomas.Infra.Utils.Repositories;
 
 public class UnitOfWork(DbContext context)
 {
-    private IDbContextTransaction _transaction;
+    private IDbContextTransaction? _transaction;
 
     public void BeginTransaction()
     {
