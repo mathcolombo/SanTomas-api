@@ -9,17 +9,17 @@ namespace SanTomas_Api.Controllers.MainCategories;
 [Route("api/[controller]")]
 public class MainCategoriesController : ControllerBase
 {
-    private readonly IMainCategoriesApplication _mainCategoriesApplication;
+    private readonly IMainCategoriesApplicationService _mainCategoriesApplicationService;
 
-    public MainCategoriesController(IMainCategoriesApplication mainCategoriesApplication)
+    public MainCategoriesController(IMainCategoriesApplicationService mainCategoriesApplicationService)
     {
-        _mainCategoriesApplication = mainCategoriesApplication;
+        _mainCategoriesApplicationService = mainCategoriesApplicationService;
     }
     
     [HttpPost]
     public ActionResult<MainCategoryResponse> Insert([FromBody] MainCategoryInsertRequest request)
     {
-       MainCategoryResponse? response = _mainCategoriesApplication.Insert(request);
+       MainCategoryResponse? response = _mainCategoriesApplicationService.Insert(request);
        return Ok(response);
     }
 }
