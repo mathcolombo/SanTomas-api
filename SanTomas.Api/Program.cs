@@ -1,7 +1,4 @@
-using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using SanTomas.Application.MainCategories.Services;
-using SanTomas.Application.MainCategories.Services.Interfaces;
 using SanTomas.Infra.Contexts;
 using SanTomas.Ioc;
 
