@@ -7,6 +7,6 @@ public interface IMainCategoriesService
     MainCategory Instantiate(string mainCategoryName);
     MainCategory Insert(string mainCategoryName);
     MainCategory GetById(int id);
-    MainCategory Update();
+    MainCategory Update(int id, string mainCategoryName);
     MainCategory Delete(int id);
 }

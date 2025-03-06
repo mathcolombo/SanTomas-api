@@ -19,7 +19,28 @@ public class MainCategoriesController : ControllerBase
     [HttpPost]
     public ActionResult<MainCategoryResponse> Insert([FromBody] MainCategoryInsertRequest request)
     {
-       MainCategoryResponse? response = _mainCategoriesApplicationService.Insert(request);
+       MainCategoryResponse response = _mainCategoriesApplicationService.Insert(request);
        return Ok(response);
+    }
+
+    [HttpGet("{id:int}")]
+    public ActionResult<MainCategoryResponse> GetById(int id)
+    {
+        MainCategoryResponse response = _mainCategoriesApplicationService.GetById(id);
+        return Ok(response);
+    }
+
+    [HttpPut("{id:int}")]
+    public ActionResult<MainCategoryResponse> Update(int id, [FromBody] MainCategoryUpdateRequest request)
+    {
+        MainCategoryResponse response = _mainCategoriesApplicationService.Update(id, request);
+        return Ok(response);
+    }
+    
+    [HttpDelete("{id:int}")]
+    public ActionResult<MainCategoryResponse> Delete(int id)
+    {
+        MainCategoryResponse response = _mainCategoriesApplicationService.Delete(id);
+        return Ok(response);
     }
 }

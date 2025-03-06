@@ -23,13 +23,17 @@ public class MainCategoriesService : IMainCategoriesService
 
     public MainCategory GetById(int id) => _mainCategoriesRepository.GetById(id) ?? throw new NullReferenceException("Categoria principal não foi encontrada!");
 
-    public MainCategory Update()
+    public MainCategory Update(int id, string mainCategoryName)
     {
-        throw new NotImplementedException();
+        var mainCategory = GetById(id);
+        mainCategory.SetMainCategoryName(mainCategoryName);
+        return _mainCategoriesRepository.Update(mainCategory);
     }
 
     public MainCategory Delete(int id)
     {
-        throw new NotImplementedException();
+        var mainCategory = GetById(id);
+        _mainCategoriesRepository.Delete(mainCategory);
+        return mainCategory;
     }
 }
