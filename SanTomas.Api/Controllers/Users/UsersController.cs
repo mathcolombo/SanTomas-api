@@ -15,7 +15,12 @@ public class UsersController : Controller
     {
         _usersApplicationService = usersApplicationService;
     }
-
+    
+    /// <summary>
+    /// Insert the user
+    /// </summary>
+    /// <param name="request"></param>
+    /// <returns>Action Result - UserResponse</returns>
     [HttpPost]
     public ActionResult<UserResponse> Insert([FromBody] UserInsertRequest request)
     {
@@ -23,6 +28,11 @@ public class UsersController : Controller
         return Ok(response);
     }
     
+    /// <summary>
+    /// Get the user
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns>Action Result - UserResponse</returns>
     [HttpGet("{id:int}")]
     public ActionResult<UserResponse> GetById(int id)
     {
@@ -30,6 +40,12 @@ public class UsersController : Controller
         return Ok(response);
     }
     
+    /// <summary>
+    /// Update the user
+    /// </summary>
+    /// <param name="id"></param>
+    /// <param name="request"></param>
+    /// <returns>Action Result - UserResponse</returns>
     [HttpPut("{id:int}")]
     public ActionResult<UserResponse> Update(int id, [FromBody] UserUpdateRequest request)
     {
@@ -37,6 +53,11 @@ public class UsersController : Controller
         return Ok(response);
     }
     
+    /// <summary>
+    /// Delete the user
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns>Action Result - UserResponse</returns>
     [HttpDelete("{id:int}")]
     public ActionResult<UserResponse> Delete(int id)
     {
