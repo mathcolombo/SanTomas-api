@@ -13,8 +13,6 @@
       <Folder Include="Courses\Services\" />
       <Folder Include="Platforms\Repositories\" />
       <Folder Include="Platforms\Services\" />
-      <Folder Include="Users\Repositories\" />
-      <Folder Include="Users\Services\" />
     </ItemGroup>
 
     <ItemGroup>

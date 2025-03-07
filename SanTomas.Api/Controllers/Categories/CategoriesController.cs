@@ -7,11 +7,11 @@ namespace SanTomas_Api.Controllers.Categories;
 
 [ApiController]
 [Route("api/[controller]")]
-public class CategoryController : ControllerBase
+public class CategoriesController : ControllerBase
 {
     private readonly ICategoriesApplicationService _categoriesApplicationService;
 
-    public CategoryController(ICategoriesApplicationService categoriesApplicationService)
+    public CategoriesController(ICategoriesApplicationService categoriesApplicationService)
     {
         _categoriesApplicationService = categoriesApplicationService;
     }

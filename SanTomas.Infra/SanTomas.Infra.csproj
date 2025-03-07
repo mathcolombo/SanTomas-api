@@ -10,7 +10,7 @@
       <Folder Include="Certificates\Repositories\" />
       <Folder Include="Courses\Repositories\" />
       <Folder Include="Platforms\Repositories\" />
-      <Folder Include="Users\Repositories\" />
+      <Folder Include="Utils\Entities\" />
     </ItemGroup>
 
     <ItemGroup>

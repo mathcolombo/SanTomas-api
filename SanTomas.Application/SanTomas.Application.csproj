@@ -23,10 +23,6 @@
       <Folder Include="Platforms\Dtos\Responses\" />
       <Folder Include="Platforms\Profiles\" />
       <Folder Include="Platforms\Services\Interfaces\" />
-      <Folder Include="Users\Dtos\Requests\" />
-      <Folder Include="Users\Dtos\Responses\" />
-      <Folder Include="Users\Profiles\" />
-      <Folder Include="Users\Services\Interfaces\" />
     </ItemGroup>
 
     <ItemGroup>

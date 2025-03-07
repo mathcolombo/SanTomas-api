@@ -22,7 +22,6 @@
       <Folder Include="Controllers\Courses\" />
       <Folder Include="Controllers\CourseUsers\" />
       <Folder Include="Controllers\Platforms\" />
-      <Folder Include="Controllers\Users\" />
     </ItemGroup>
 
     <ItemGroup>
