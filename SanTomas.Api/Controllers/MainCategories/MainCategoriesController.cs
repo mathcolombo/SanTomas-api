@@ -6,8 +6,8 @@ using SanTomas.Application.MainCategories.Services.Interfaces;
 namespace SanTomas_Api.Controllers.MainCategories;
 
 [ApiController]
-[Route("api/[controller]")]
-public class MainCategoriesController : ControllerBase
+[Route("api/maincategories")]
+public class MainCategoriesController : Controller
 {
     private readonly IMainCategoriesApplicationService _mainCategoriesApplicationService;
 

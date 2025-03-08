@@ -19,10 +19,6 @@
       <Folder Include="CourseUsers\Dtos\Responses\" />
       <Folder Include="CourseUsers\Profiles\" />
       <Folder Include="CourseUsers\Services\Interfaces\" />
-      <Folder Include="Platforms\Dtos\Requests\" />
-      <Folder Include="Platforms\Dtos\Responses\" />
-      <Folder Include="Platforms\Profiles\" />
-      <Folder Include="Platforms\Services\Interfaces\" />
     </ItemGroup>
 
     <ItemGroup>

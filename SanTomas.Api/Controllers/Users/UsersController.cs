@@ -6,7 +6,7 @@ using SanTomas.Application.Users.Services.Interfaces;
 namespace SanTomas_Api.Controllers.Users;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/users")]
 public class UsersController : Controller
 {
     private readonly IUsersApplicationService _usersApplicationService;

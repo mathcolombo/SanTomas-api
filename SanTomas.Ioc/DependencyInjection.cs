@@ -6,6 +6,9 @@ using SanTomas.Application.Categories.Services.Interfaces;
 using SanTomas.Application.MainCategories.Profiles;
 using SanTomas.Application.MainCategories.Services;
 using SanTomas.Application.MainCategories.Services.Interfaces;
+using SanTomas.Application.Platforms.Profiles;
+using SanTomas.Application.Platforms.Services;
+using SanTomas.Application.Platforms.Services.Interfaces;
 using SanTomas.Application.Users.Profiles;
 using SanTomas.Application.Users.Services;
 using SanTomas.Application.Users.Services.Interfaces;
@@ -15,6 +18,8 @@ using SanTomas.Domain.Categories.Services.Interfaces;
 using SanTomas.Domain.MainCategories.Repositories.Interfaces;
 using SanTomas.Domain.MainCategories.Services;
 using SanTomas.Domain.MainCategories.Services.Interfaces;
+using SanTomas.Domain.Platforms.Services;
+using SanTomas.Domain.Platforms.Services.Interfaces;
 using SanTomas.Domain.Users.Repositories.Interfaces;
 using SanTomas.Domain.Users.Services;
 using SanTomas.Domain.Users.Services.Interfaces;
@@ -45,6 +50,7 @@ public static class DependencyInjection
         services.AddAutoMapper(typeof(MainCategoriesProfile));
         services.AddAutoMapper(typeof(CategoriesProfile));
         services.AddAutoMapper(typeof(UsersProfile));
+        services.AddAutoMapper(typeof(PlatformsProfile));
         
         return services;
     }
@@ -54,6 +60,7 @@ public static class DependencyInjection
         services.AddScoped<IMainCategoriesApplicationService, MainCategoriesApplicationService>();
         services.AddScoped<ICategoriesApplicationService, CategoriesApplicationService>();
         services.AddScoped<IUsersApplicationService, UsersApplicationService>();
+        services.AddScoped<IPlatformsApplicationService, PlatformsApplicationService>();
         
         return services;
     }
@@ -63,6 +70,7 @@ public static class DependencyInjection
         services.AddScoped<IMainCategoriesService, MainCategoriesService>();
         services.AddScoped<ICategoriesService, CategoriesService>();
         services.AddScoped<IUsersService, UsersService>();
+        services.AddScoped<IPlatformsService, PlatformsService>();
         
         return services;
     }
