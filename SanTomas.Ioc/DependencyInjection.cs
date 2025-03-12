@@ -3,6 +3,9 @@ using Microsoft.Extensions.DependencyInjection;
 using SanTomas.Application.Categories.Profiles;
 using SanTomas.Application.Categories.Services;
 using SanTomas.Application.Categories.Services.Interfaces;
+using SanTomas.Application.Courses.Profiles;
+using SanTomas.Application.Courses.Services;
+using SanTomas.Application.Courses.Services.Interfaces;
 using SanTomas.Application.MainCategories.Profiles;
 using SanTomas.Application.MainCategories.Services;
 using SanTomas.Application.MainCategories.Services.Interfaces;
@@ -15,9 +18,13 @@ using SanTomas.Application.Users.Services.Interfaces;
 using SanTomas.Domain.Categories.Repositories.Interfaces;
 using SanTomas.Domain.Categories.Services;
 using SanTomas.Domain.Categories.Services.Interfaces;
+using SanTomas.Domain.Courses.Repositories.Interfaces;
+using SanTomas.Domain.Courses.Services;
+using SanTomas.Domain.Courses.Services.Interfaces;
 using SanTomas.Domain.MainCategories.Repositories.Interfaces;
 using SanTomas.Domain.MainCategories.Services;
 using SanTomas.Domain.MainCategories.Services.Interfaces;
+using SanTomas.Domain.Platforms.Repositories.Interfaces;
 using SanTomas.Domain.Platforms.Services;
 using SanTomas.Domain.Platforms.Services.Interfaces;
 using SanTomas.Domain.Users.Repositories.Interfaces;
@@ -25,7 +32,9 @@ using SanTomas.Domain.Users.Services;
 using SanTomas.Domain.Users.Services.Interfaces;
 using SanTomas.Domain.Utils.Repositories.Interfaces;
 using SanTomas.Infra.Categories.Repositories;
+using SanTomas.Infra.Courses.Repositories;
 using SanTomas.Infra.MainCategories.Repositories;
+using SanTomas.Infra.Platforms.Repositories;
 using SanTomas.Infra.Users.Repositories;
 using SanTomas.Infra.Utils.Repositories;
 
@@ -51,6 +60,7 @@ public static class DependencyInjection
         services.AddAutoMapper(typeof(CategoriesProfile));
         services.AddAutoMapper(typeof(UsersProfile));
         services.AddAutoMapper(typeof(PlatformsProfile));
+        services.AddAutoMapper(typeof(CoursesProfile));
         
         return services;
     }
@@ -61,6 +71,7 @@ public static class DependencyInjection
         services.AddScoped<ICategoriesApplicationService, CategoriesApplicationService>();
         services.AddScoped<IUsersApplicationService, UsersApplicationService>();
         services.AddScoped<IPlatformsApplicationService, PlatformsApplicationService>();
+        services.AddScoped<ICoursesApplicationService, CoursesApplicationService>();
         
         return services;
     }
@@ -71,6 +82,7 @@ public static class DependencyInjection
         services.AddScoped<ICategoriesService, CategoriesService>();
         services.AddScoped<IUsersService, UsersService>();
         services.AddScoped<IPlatformsService, PlatformsService>();
+        services.AddScoped<ICoursesService, CoursesService>();
         
         return services;
     }
@@ -80,6 +92,8 @@ public static class DependencyInjection
         services.AddScoped<IMainCategoriesRepository, MainCategoriesRepository>();
         services.AddScoped<ICategoriesRepository, CategoriesRepository>();
         services.AddScoped<IUsersRepository, UsersRepository>();
+        services.AddScoped<IPlatformsRepository, PlatformsRepository>();
+        services.AddScoped<ICoursesRepository, CoursesRepository>();
         
         return services;
     }

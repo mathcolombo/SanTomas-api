@@ -35,7 +35,7 @@ public class CoursesConfiguration : IEntityTypeConfiguration<Course>
 
         builder.Property(c => c.Hours)
             .IsRequired()
-            .HasColumnType("decimal(6, 2")
+            .HasColumnType("decimal(6, 2)")
             .HasComment("Horas totais oferecidas pelo curso");
         
         // Navigations EF

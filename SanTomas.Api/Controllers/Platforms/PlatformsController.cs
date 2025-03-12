@@ -17,7 +17,7 @@ public class PlatformsController : Controller
     }
 
     [HttpPost]
-    public ActionResult<PlatformResponse> Insert(PlatformInsertRequest request)
+    public ActionResult<PlatformResponse> Insert([FromBody] PlatformInsertRequest request)
     {
         var response = _platformsApplicationService.Insert(request);
         return Ok(response);

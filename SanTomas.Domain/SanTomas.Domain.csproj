@@ -9,8 +9,6 @@
     <ItemGroup>
       <Folder Include="Certificates\Repositories\" />
       <Folder Include="Certificates\Services\" />
-      <Folder Include="Courses\Repositories\" />
-      <Folder Include="Courses\Services\" />
     </ItemGroup>
 
     <ItemGroup>

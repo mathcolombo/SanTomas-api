@@ -8,7 +8,6 @@
 
     <ItemGroup>
       <Folder Include="Certificates\Repositories\" />
-      <Folder Include="Courses\Repositories\" />
       <Folder Include="Utils\Entities\" />
     </ItemGroup>
 

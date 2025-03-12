@@ -11,10 +11,6 @@
       <Folder Include="Certificates\Dtos\Responses\" />
       <Folder Include="Certificates\Profiles\" />
       <Folder Include="Certificates\Services\Interfaces\" />
-      <Folder Include="Courses\Dtos\Requests\" />
-      <Folder Include="Courses\Dtos\Responses\" />
-      <Folder Include="Courses\Profiles\" />
-      <Folder Include="Courses\Services\Interfaces\" />
       <Folder Include="CourseUsers\Dtos\Requests\" />
       <Folder Include="CourseUsers\Dtos\Responses\" />
       <Folder Include="CourseUsers\Profiles\" />
