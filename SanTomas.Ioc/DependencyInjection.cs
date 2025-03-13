@@ -6,6 +6,9 @@ using SanTomas.Application.Categories.Services.Interfaces;
 using SanTomas.Application.Courses.Profiles;
 using SanTomas.Application.Courses.Services;
 using SanTomas.Application.Courses.Services.Interfaces;
+using SanTomas.Application.CoursesUsers.Profiles;
+using SanTomas.Application.CoursesUsers.Services;
+using SanTomas.Application.CoursesUsers.Services.Interfaces;
 using SanTomas.Application.MainCategories.Profiles;
 using SanTomas.Application.MainCategories.Services;
 using SanTomas.Application.MainCategories.Services.Interfaces;
@@ -21,6 +24,9 @@ using SanTomas.Domain.Categories.Services.Interfaces;
 using SanTomas.Domain.Courses.Repositories.Interfaces;
 using SanTomas.Domain.Courses.Services;
 using SanTomas.Domain.Courses.Services.Interfaces;
+using SanTomas.Domain.CoursesUsers.Repositories.Interfaces;
+using SanTomas.Domain.CoursesUsers.Services;
+using SanTomas.Domain.CoursesUsers.Services.Interfaces;
 using SanTomas.Domain.MainCategories.Repositories.Interfaces;
 using SanTomas.Domain.MainCategories.Services;
 using SanTomas.Domain.MainCategories.Services.Interfaces;
@@ -33,6 +39,7 @@ using SanTomas.Domain.Users.Services.Interfaces;
 using SanTomas.Domain.Utils.Repositories.Interfaces;
 using SanTomas.Infra.Categories.Repositories;
 using SanTomas.Infra.Courses.Repositories;
+using SanTomas.Infra.CoursesUsers.Repositories;
 using SanTomas.Infra.MainCategories.Repositories;
 using SanTomas.Infra.Platforms.Repositories;
 using SanTomas.Infra.Users.Repositories;
@@ -61,6 +68,7 @@ public static class DependencyInjection
         services.AddAutoMapper(typeof(UsersProfile));
         services.AddAutoMapper(typeof(PlatformsProfile));
         services.AddAutoMapper(typeof(CoursesProfile));
+        services.AddAutoMapper(typeof(CoursesUsersProfile));
         
         return services;
     }
@@ -72,6 +80,7 @@ public static class DependencyInjection
         services.AddScoped<IUsersApplicationService, UsersApplicationService>();
         services.AddScoped<IPlatformsApplicationService, PlatformsApplicationService>();
         services.AddScoped<ICoursesApplicationService, CoursesApplicationService>();
+        services.AddScoped<ICoursesUsersApplicationService, CoursesUsersApplicationService>();
         
         return services;
     }
@@ -83,6 +92,7 @@ public static class DependencyInjection
         services.AddScoped<IUsersService, UsersService>();
         services.AddScoped<IPlatformsService, PlatformsService>();
         services.AddScoped<ICoursesService, CoursesService>();
+        services.AddScoped<ICoursesUsersService, CoursesUsersService>();
         
         return services;
     }
@@ -94,6 +104,7 @@ public static class DependencyInjection
         services.AddScoped<IUsersRepository, UsersRepository>();
         services.AddScoped<IPlatformsRepository, PlatformsRepository>();
         services.AddScoped<ICoursesRepository, CoursesRepository>();
+        services.AddScoped<ICoursesUsersRepository, CoursesUsersRepository>();
         
         return services;
     }

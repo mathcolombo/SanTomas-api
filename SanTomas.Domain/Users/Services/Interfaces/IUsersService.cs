@@ -7,7 +7,7 @@ public interface IUsersService
 {
     User Instantiate(UserInsertCommand command);
     User Insert(UserInsertCommand command);
-    User? GetById(int id);
+    User GetById(int id);
     User Update(int id, UserUpdateCommand command);
     User Delete(int id);
 }

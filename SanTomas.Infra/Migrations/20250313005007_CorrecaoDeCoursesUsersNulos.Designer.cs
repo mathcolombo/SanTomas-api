@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SanTomas.Infra.Contexts;
 
@@ -11,9 +12,11 @@ using SanTomas.Infra.Contexts;
 namespace SanTomas.Infra.Migrations
 {
     [DbContext(typeof(SanTomasDbContext))]
-    partial class SanTomasDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250313005007_CorrecaoDeCoursesUsersNulos")]
+    partial class CorrecaoDeCoursesUsersNulos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -19,7 +19,6 @@
 
     <ItemGroup>
       <Folder Include="Controllers\Certificates\" />
-      <Folder Include="Controllers\CourseUsers\" />
     </ItemGroup>
 
     <ItemGroup>

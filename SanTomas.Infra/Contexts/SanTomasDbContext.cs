@@ -14,7 +14,6 @@ public class SanTomasDbContext : DbContext
 {
     public DbSet<Category> Categories { get; set; }
     public DbSet<Certificate> Certificates { get; set; }
-    public DbSet<Course> CoursesCategories { get; set; }
     public DbSet<Course> Courses { get; set; }
     public DbSet<CourseUser> CoursesUsers { get; set; }
     public DbSet<MainCategory> MainCategories { get; set; }

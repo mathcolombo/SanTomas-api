@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations.Internal;
 using SanTomas.Infra.Contexts;
 using SanTomas.Ioc;
 
@@ -12,7 +13,7 @@ builder.Services.AddSwaggerGen();
 // Configure database connection
 var mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<SanTomasDbContext>(options =>
-    options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection)));
+    options.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection), b => b.MigrationsAssembly("SanTomas.Infra")));
 
 #region IOC configuration
 builder.Services.AddAbstractions();
