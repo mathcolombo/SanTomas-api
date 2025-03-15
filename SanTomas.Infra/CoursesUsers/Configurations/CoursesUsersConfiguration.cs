@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using SanTomas.Domain.Certificates.Entities;
 using SanTomas.Domain.CoursesUsers.Entities;
 
-namespace SanTomas.Infra.Courses.Configurations;
+namespace SanTomas.Infra.CoursesUsers.Configurations;
 
 public class CoursesUsersConfiguration : IEntityTypeConfiguration<CourseUser>
 {
