@@ -18,10 +18,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\Certificates\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\SanTomas.Application\SanTomas.Application.csproj" />
       <ProjectReference Include="..\SanTomas.Infra\SanTomas.Infra.csproj" />
       <ProjectReference Include="..\SanTomas.Ioc\SanTomas.Ioc.csproj" />

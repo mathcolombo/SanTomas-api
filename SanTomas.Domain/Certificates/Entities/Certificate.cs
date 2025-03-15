@@ -11,4 +11,32 @@ public class Certificate
     
     // Navigations EF
     public CourseUser? CourseUser { get; protected set; }
+
+    
+    public Certificate() {}
+    
+    public Certificate(CourseUser courseUser,
+        string filePath)
+    {
+        SetCorseUser(courseUser);
+        SetFilePath(filePath);
+        SetUploadDate();
+    }
+
+    public void SetCorseUser(CourseUser courseUser)
+    {
+        CourseUser = courseUser;
+    }
+
+    public void SetFilePath(string filePath)
+    {
+        if (string.IsNullOrWhiteSpace(filePath))
+            throw new ArgumentNullException(nameof(filePath));
+        if(filePath.Length > 255)
+            throw new ArgumentException("Tamanho máximo de caracteres é 255");
+        
+        FilePath = filePath;
+    }
+
+    private void SetUploadDate() => UploadDate = DateTime.Now;
 }

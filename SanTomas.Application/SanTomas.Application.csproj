@@ -7,13 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Certificates\Dtos\Requests\" />
-      <Folder Include="Certificates\Dtos\Responses\" />
-      <Folder Include="Certificates\Profiles\" />
-      <Folder Include="Certificates\Services\Interfaces\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\SanTomas.Domain\SanTomas.Domain.csproj" />
     </ItemGroup>
 
