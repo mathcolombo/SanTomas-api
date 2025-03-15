@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using SanTomas.Domain.Courses.Entities;
+﻿using SanTomas.Domain.Courses.Entities;
 
 namespace SanTomas.Domain.Platforms.Entities;
 

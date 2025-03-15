@@ -1,8 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
-using SanTomas.Domain.CoursesCategories.Entities;
-using SanTomas.Domain.Courses.Entities;
+﻿using SanTomas.Domain.Courses.Entities;
 using SanTomas.Domain.MainCategories.Entities;
 
 namespace SanTomas.Domain.Categories.Entities;

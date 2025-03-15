@@ -12,7 +12,7 @@ public class CourseUser
     public int UserId { get; protected set; }
     public DateTime? StartDate { get; protected set; }
     public DateTime? CompletionDate { get; protected set; }
-    public StatusCursoEnum Status { get; protected set; }
+    public StatusCourseEnum Status { get; protected set; }
     public decimal? HoursWorked { get; protected set; }
     public decimal? Progress { get; protected set; }
     
@@ -27,7 +27,7 @@ public class CourseUser
         User user,
         DateTime? startDate,
         DateTime? completionDate,
-        StatusCursoEnum status,
+        StatusCourseEnum status,
         decimal? hoursWorked)
     {
         SetCourse(course);
@@ -70,7 +70,7 @@ public class CourseUser
         CompletionDate = completionDate;
     }
 
-    public void SetStatus(StatusCursoEnum status)
+    public void SetStatus(StatusCourseEnum status)
     {
         Status = status;
     }

@@ -8,6 +8,6 @@ public class CourseUserInsertCommand
     public int UserId { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? CompletionDate { get; set; }
-    public StatusCursoEnum Status { get; set; }
+    public StatusCourseEnum Status { get; set; }
     public decimal? HoursWorked { get; set; }
 }

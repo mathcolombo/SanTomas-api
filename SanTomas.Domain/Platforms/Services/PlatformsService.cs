@@ -1,8 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-using SanTomas.Domain.Platforms.Entities;
+﻿using SanTomas.Domain.Platforms.Entities;
 using SanTomas.Domain.Platforms.Repositories.Interfaces;
 using SanTomas.Domain.Platforms.Services.Interfaces;
-using SanTomas.Domain.Users.Repositories.Interfaces;
 
 namespace SanTomas.Domain.Platforms.Services;
 

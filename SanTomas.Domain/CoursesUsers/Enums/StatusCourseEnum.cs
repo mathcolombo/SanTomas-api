@@ -1,6 +1,6 @@
 ﻿namespace SanTomas.Domain.CoursesUsers.Enums;
 
-public enum StatusCursoEnum
+public enum StatusCourseEnum
 {
     Concluido = 0,
     Planejado = 1,

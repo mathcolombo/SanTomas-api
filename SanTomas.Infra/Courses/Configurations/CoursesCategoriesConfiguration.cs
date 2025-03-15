@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using SanTomas.Domain.CoursesCategories.Entities;
+using SanTomas.Domain.Courses.Entities;
 
 namespace SanTomas.Infra.Courses.Configurations;
 

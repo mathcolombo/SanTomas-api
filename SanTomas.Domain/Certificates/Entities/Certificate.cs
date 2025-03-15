@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
-using SanTomas.Domain.CoursesUsers.Entities;
+﻿using SanTomas.Domain.CoursesUsers.Entities;
 
 namespace SanTomas.Domain.Certificates.Entities;
 

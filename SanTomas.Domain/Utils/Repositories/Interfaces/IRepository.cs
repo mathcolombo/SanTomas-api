@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.ChangeTracking;
-
-namespace SanTomas.Domain.Utils.Repositories.Interfaces;
+﻿namespace SanTomas.Domain.Utils.Repositories.Interfaces;
 
 public interface IRepository<TEntity> where TEntity : class
 {

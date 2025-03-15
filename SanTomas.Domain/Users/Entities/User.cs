@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using SanTomas.Domain.Courses.Entities;
-using SanTomas.Domain.CoursesUsers.Entities;
+﻿using SanTomas.Domain.CoursesUsers.Entities;
 
 namespace SanTomas.Domain.Users.Entities;
 

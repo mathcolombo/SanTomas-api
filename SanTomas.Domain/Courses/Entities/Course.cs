@@ -1,5 +1,4 @@
-﻿using SanTomas.Domain.CoursesCategories.Entities;
-using SanTomas.Domain.CoursesUsers.Entities;
+﻿using SanTomas.Domain.CoursesUsers.Entities;
 using SanTomas.Domain.Platforms.Entities;
 
 namespace SanTomas.Domain.Courses.Entities;

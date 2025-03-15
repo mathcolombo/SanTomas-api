@@ -1,5 +1,4 @@
-﻿using SanTomas.Domain.Courses.Repositories.Interfaces;
-using SanTomas.Domain.Courses.Services.Interfaces;
+﻿using SanTomas.Domain.Courses.Services.Interfaces;
 using SanTomas.Domain.CoursesUsers.Entities;
 using SanTomas.Domain.CoursesUsers.Repositories.Interfaces;
 using SanTomas.Domain.CoursesUsers.Services.Commands;

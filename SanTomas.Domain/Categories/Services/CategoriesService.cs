@@ -1,7 +1,6 @@
 ﻿using SanTomas.Domain.Categories.Entities;
 using SanTomas.Domain.Categories.Repositories.Interfaces;
 using SanTomas.Domain.Categories.Services.Interfaces;
-using SanTomas.Domain.MainCategories.Entities;
 using SanTomas.Domain.MainCategories.Services.Interfaces;
 
 namespace SanTomas.Domain.Categories.Services;

@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using SanTomas.Domain.Categories.Entities;
+﻿using SanTomas.Domain.Categories.Entities;
 
 namespace SanTomas.Domain.MainCategories.Entities;
 

@@ -16,4 +16,16 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="8.0.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="CoursesCategories\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="CoursesCategories\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="CoursesCategories\**" />
+    </ItemGroup>
+
 </Project>
